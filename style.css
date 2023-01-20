@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before
+*::after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 125%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the Banner */
+header {
+    background-image: url(https://www.publicdomainpictures.net/pictures/280000/velka/coffee-beans-background-1539849199jSm.jpg);
+    height: 100vh;
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 20px;
+}
+header section {
+    padding: 1rem;
+    
+}
+header section h1 {
+    color: ghostwhite;
+}
+/* Center the centered-main class */
+.centered-main {
+    width: 70%;
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+/* Style Floated boxes */
+.box-right {
+    box-sizing: content-box;
+    float: right;
+    width: 400px;
+    padding: 0.5em;
+    margin: 0 0 0 1em;
+}
+.box-right img {
+    width: 100%;
+}
+.clear-float {
+    clear: both
+}
