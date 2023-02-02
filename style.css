@@ -6,10 +6,31 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+
+/* Style default set to entire body*/
 body {
     font-size: 125%;
+    font-family: 'Quattrocento', serif;
     margin: 0;
     padding: 0;
+    color: #ffff;
+    background-color: hsl(5, 36%, 18%);
+}
+p.ex1 {
+    max-width: 78rem;
+}
+h1,h2 {
+    font-family: 'Oswald', sans-serif;
+}
+a:link, a:visited {
+    color:lightcyan
+}
+a:hover {
+    color:cornflowerblue
+}
+a:active, a:focus {
+    color:dodgerblue
 }
 
 /* Style the Banner */
@@ -19,20 +40,33 @@ header {
     min-height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 20px;
+    position: relative;
 }
 header section {
     padding: 1rem;
-    
+    width: 60vw;
+    height: 20%;
+    position: absolute;
+    background-color: hsla(40, 23%, 95%,10%);
+    top: 40%;
+    left: 20vw;
+    text-align: center;
+}
+h1.centered-main {
+    padding-top: 4em;
 }
 header section h1 {
-    color: ghostwhite;
+    color: hsl(40, 23%, 95%);
+    font-size: 8rem;
 }
 /* Center the centered-main class */
 .centered-main {
     width: 70%;
     max-width: 60em;
     margin: 0 auto;
+}
+h2.centered-main {
+    padding-top: 1rem;
 }
 
 /* Style Floated boxes */
@@ -47,5 +81,10 @@ header section h1 {
     width: 100%;
 }
 .clear-float {
-    clear: both
+    clear: both;
+}
+
+footer {
+    background-color:hsl(16, 15%, 35%) ;
+    padding: 2.5em 0;
 }
